@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="Login.css">
+
+    <!-- 제이쿼리 적용-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 테일윈드 적용-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <!-- 폰트어썸 적용-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+
+<body>
+<div class="con mx-auto flex justify-center">
+  <section class="login-screen flex justify-center">
+    <div class="menu-1">
+      <!-- 로고 부분 -->
+      <a href="#" class="logo">
+        <span>PROJECT<br>AOE</span>
+      </a>
+      <!-- 멘트 부분 -->
+      <h1>환영합니다! 👋</h1>
+      <p>PROJECT AOE에서 원하는 정보를<br>찾으시길 바라겠습니다.</p>
+      <!-- 아이디입력  부분 -->
+      <div class="input-box">
+        <input onfocus="$(this).addClass('focused');" type="id" name="name" class="input-box__e-mail border w-full rounded px-4 py-3 block" placeholder="아이디" required value>
+        
+        <div class="invalid">올바른 아이디를 입력해주세요.</div>
+        <input  onfocus="$(this).addClass('focused');" type="password" name="name" class="input-box__password border w-full rounded px-4 py-3 block" placeholder="비밀번호" required value>
+      </div>
+      <!-- 버튼 부분-->
+      <div class="bottom-button flex items-center flex-col">
+        <button class=" flex justify-center items-center">
+          <span>로그인 하기</span>
+        </button>
+        <a class=" flex justify-center items-center" href="MemberEdition.html">
+          <span>회원가입 하기</span>
+        </a>
+      </div>
+      <!-- 하단 아이디 비번 찾기 부분 -->
+      <div class="find-idpw flex justify-center items-center">
+        <a href="#">
+          <span>아이디 찾기</span>
+        </a>
+        <span class="circle w-1 h-1 bg-gray-500"></span>
+        <a href="#">
+          <span>비밀번호 찾기</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+</div>
+</body>
+</html>

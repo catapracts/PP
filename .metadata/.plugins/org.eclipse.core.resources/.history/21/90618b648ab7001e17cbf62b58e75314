@@ -1,0 +1,14 @@
+package board1;
+
+import java.sql.Date;
+
+public class Board1DTO 
+{
+	private int id ; 
+	private String title; 
+	private String write; 
+	private String content; 
+	private Date regdate;
+	
+	
+}

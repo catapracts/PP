@@ -1,0 +1,165 @@
+        /*폰트 적용*/
+        @font-face 
+        {
+          font-family: 'GmarketSansMedium';
+          src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+          font-weight: normal;
+          font-style: normal;
+        }
+        
+        html > body
+        {
+          font-family:"GmarketSansMedium";
+        }
+        
+        /*라이브러리*/
+        .footer-bar
+        {
+          height:376px;
+        }
+        
+        .con
+        {
+          max-width:1280px;
+        }
+        
+        /*커스텀*/
+        .footer-bar .con
+        {
+          padding:32px 0;
+        }
+        
+        /*로고*/
+        .logo
+        {
+          font-size:20px;
+          font-weight:bold;
+          text-shadow:1px 0px, -1px 0px;
+        }
+        
+        /*푸터바-1 1차메뉴*/
+        .menu-1
+        {
+        }
+        
+        .menu-1> li
+        {
+          padding:0 30px;
+        }
+        
+        .menu-1 > li > h3 > span
+        {
+          font-weight:bold;
+          font-size:16px;
+        }
+        
+        .menu-1 > li > h3 > li
+        {
+          padding:10px 0px;
+        
+        }
+        
+        .menu-1 > li > h3  li  span
+        {
+          font-size:14px;
+        }
+        .menu-1_li-1-text li>span
+        {
+          color:#737373;
+        }
+        
+        /*푸터바-1 2차 메뉴*/
+        .menu-1 >li ul:not(:first-child)
+        {
+          margin-top:16px;
+        }
+        
+        .menu-1 li:first-child ul 
+        {
+          margin-top:12px;
+        }
+        
+        /*푸터바-1 2차 메뉴의 두번째*/
+        .menu-1 >li:nth-child(2) ul >li>a>svg
+        {
+          font-size:24px;
+          margin-right:8px;
+        }
+        
+        .menu-1 >li:nth-child(2) ul >li
+        {
+          padding:0px 10px 17px 0;
+        }
+        
+        /*푸터바-1 2차 메뉴의 세번째*/
+        .menu-1 > li:last-child ul
+        {
+          margin-bottom:8px;
+        }
+        
+        .menu-1 > li:last-child ul > li:not(:first-child) 
+        {
+          font-size:12px;
+          color:#737373;
+          margin-top:8px;
+        }
+        
+        .menu-1 > li:last-child ul > li:last-child
+        {
+          color:#e67800;
+          font-weight:600;
+        }
+        
+        .menu-1 > li:last-child ul > li:first-child
+        {
+          text-align:center;
+          border:1px solid black;
+          border-radius:8px;
+          padding:12px;
+          cursor:pointer;
+        }
+        
+        .menu-1 > li:last-child ul > li:nth-child(4)>span>a
+        {
+          text-decoration:underline;
+          font-weight:bold;
+          color:black;
+        }
+        
+        /*푸터바-2 라이브러리*/
+        
+        .footer-bar-2 > *
+        {
+          color:#737373;
+          font-size:12px;
+        }
+
+        /*푸터바-2 커스텀*/
+        .footer-bar-2_menu-1
+        {
+          padding:32px 0;
+        }
+
+        .point
+        {
+          width:3px;
+          height:3px;
+          background-color:#737373;
+          align-self:center;
+          margin:2px 5px 5px 5px;
+        }
+
+        .line
+        {
+          height:15px;
+          background-color:#737373;
+          width:1px;
+          align-self:center;
+          margin-bottom:2px;
+          margin:0 10px;
+        }
+
+        .footer-bar-2_menu-2
+        {
+          margin-top:10px;
+        }

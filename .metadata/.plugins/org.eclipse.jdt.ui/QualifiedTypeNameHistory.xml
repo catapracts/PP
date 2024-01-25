@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="board1.Board1DTO"/>
+    <fullyQualifiedTypeName name="board2.Board2DAO"/>
+    <fullyQualifiedTypeName name="board2.Board2DTO"/>
+</qualifiedTypeNameHistroy>

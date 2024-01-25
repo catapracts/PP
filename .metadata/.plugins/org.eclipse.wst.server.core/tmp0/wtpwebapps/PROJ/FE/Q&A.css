@@ -1,0 +1,96 @@
+/*폰트 적용*/
+@font-face 
+{
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html > body 
+{
+  font-family:"GmarketSansMedium";
+}
+
+/*라이브러리*/
+.con
+{
+  max-width:800px;
+}
+
+/*커스텀*/
+.title-text
+{
+  margin:24px 0;
+}
+
+.title-text>span
+{
+  font-size:24px;
+  font-weight:bold;
+}
+
+.menu-box-1-1
+{
+  padding:16px;
+}
+
+.menu-box-1 ul li
+{
+  padding:24px 16px;
+}
+
+.menu-box-1-1 > span
+{
+  font-size:16px;
+  margin-left:8px;
+  font-weight:bold;
+}
+
+.menu-box-1-2 > span
+{
+  font-size:14px;
+  margin-top:-4px;
+  margin-left:8px;
+  white-space:wrap;
+}
+
+/*질문 박스*/
+.menu-box-1 > li
+{
+  border:1px solid black;
+  border-radius:10px;
+  margin:10px 0;
+  overflow:hidden;
+  background-color:#e5e5e5;
+}
+
+.menu-box-1 > li:active >ul
+{
+  display:block;
+}
+
+.menu-box-1  ul
+{
+  background-color:white;
+}
+.menu-box-1-2>div
+{
+  flex-shrink:0;
+}
+
+
+  .divide
+  {
+      flex: auto;
+      width: 2000px;
+      height: 500px;
+  }
+
+  .divide >.image
+  {
+      flex: auto;
+      width: auto;
+      height: 500px;
+      background-size: cover;
+  }

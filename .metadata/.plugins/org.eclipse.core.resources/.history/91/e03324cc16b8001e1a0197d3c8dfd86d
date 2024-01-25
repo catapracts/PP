@@ -1,0 +1,166 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/FE/Header.css">
+    <link rel="stylesheet" href="/FE/Footer.css">
+    <link rel="stylesheet" href="/FE/AreaExtension_snip1200.css">
+
+
+<style>
+
+    .divide
+    {
+        flex: auto;
+        width: 1200px;
+        height: 30px;
+        align-self: center;
+        border-style: solid black;
+    }
+
+    .divide >.image
+    {
+        flex: auto;
+        width: auto;
+        height: 500px;
+        background-size: cover;
+    }
+    
+    .divide > .tr, .td
+    {
+    	border-style: solid black;
+    }
+    
+</style>
+
+<title>캠페인 공략 - 새 글 등록</title>
+</head>
+
+
+
+
+
+
+
+<body>
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+  <header class="top-bar con-min-width">
+    <div class="con mx-auto flex h-full" style="
+    background-image: url(/FE/img/aoe2/680251.jpg);
+    background-size: cover;">
+      <div class="flex-grow"></div>
+      <div class="logo flex h-full">
+        <a class="flex items-center" href="index.html">
+          <p style="font-size: 50px;">
+            AOE 커뮤니티 게시판
+          </p>
+  
+        </a>
+      </div>
+      <div class="flex-grow"></div>
+      <ul class="menu-right flex">
+        <li>
+          <a class="flex items-center h-full px-4" href="Login.html">
+            <span>로그인</span>
+          </a>
+        </li>
+        <li>
+          <a class="flex items-center h-full px-4" href="MemberCreate.html">
+            <span>회원가입</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu-main flex">
+        <li><a class="flex items-center h-full" href="index.html">
+            <span>메인페이지</span>
+          </a>
+        </li>
+        <li><a class="flex items-center h-full" href="Rules.html">
+            <span>운영규칙</span>
+          </a>
+        </li>
+        <li><a class="flex items-center h-full" href="UnitBalance.html">
+            <span>게시판</span>
+          </a>
+          <nav class="menu-1">
+            <ul class="menu-2">
+              <li><a href="UnitBalance.html"><span>유닛밸런스</span></a></li>
+              <li><a href="Campaign.html"><span>캠페인공략</span></a></li>
+              <li><a href="AI.html"><span>AI대전</span></a></li>
+            </ul>
+          </nav>
+        </li>
+        <li><a class="flex items-center h-full" href="#">
+            <span>자료실</span>
+          </a>
+          <nav class="menu-1">
+            <ul class="menu-2">
+              <li><a href="History.html"><span>역사 고증 자료모음</span></a></li>
+              <li><a href="GameHistory.html"><span>게임 역사</span></a></li>
+            </ul>
+          </nav>
+        </li>
+        <li><a class="flex items-center h-full" href="Q&A.html">
+            <span>Q&A</span>
+          </a>
+        </li>
+        <li><a class="flex items-center h-full" href="Notice.html">
+            <span>공지사항</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+<br><br><br><br><br>
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>새 글 등록</h1>
+<form method = "post" action = "insertBoard.board1">
+<table border="1" cellpadding="10" cellspacing="0">
+
+<tr>
+ <td bgcolor="orange" align="center">제목</td>
+ <td><input type="text" name="title" ></td>
+</tr>
+
+<tr>
+ <td bgcolor="orange" align = "center"> 작성자 </td> 
+ <td> <input type="text" name = "write" size="10"></td>
+</tr>
+
+<tr>
+ <td  bgcolor="orange" align = "center"> 내용 </td> 
+ <td> <textarea name="content" rows="10" cols="40"></textarea></td>
+ </tr>
+<tr>
+<td colspan = "2" align = "center"> <input type="submit" value="새 글 등록"></td> 
+</tr>
+</table>
+</form>
+
+<br> <a href="http://localhost:8081/test/index.jsp"> 홈으로 </a>
+<p /> <a href= "getBoardList1.jsp"> 글 목록 </a>
+
+</body>
+</html>

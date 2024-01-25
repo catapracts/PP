@@ -1,0 +1,56 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<%@ page import = "java.util.*" %>
+<%@ page import = "board1.Board1DTO" %>
+
+<%
+ List<Board1DTO> boardList = new ArrayList<>();
+ try
+ {
+	boardList = (List<Board1DTO>) session.getAttribute("boardList");
+ 
+%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>게시판 페이지 리스트</title>
+</head>
+<body>
+<h1>list</h1>
+<table border = "1" width = "700px">
+<tr>
+<th bgcolor="orange" width = "100px">번호</th>
+<th bgcolor="orange" width = "100px">제목</th>
+<th bgcolor="orange" width = "100px">작성자</th>
+<th bgcolor="orange" width = "100px">등록일</th>
+</tr>
+<% for(Board1DTO k : boardList) { %>
+
+<tr>
+<td align = "center"><%=k.getId() %>></td>
+<td><a href = "getBoard.board1?id=<%=k.getId()%>"><%= k.getTitle() %></a></td>
+<td><%=k.getWrite() %></td>
+<td><%=k.getRegdate() %></td>
+</tr>
+<%
+}
+session.removeAttribute("boardList");
+}
+
+catch(Exception e)
+{
+	response.sendRedirect("getBoardList.board1");
+	e.printStackTrace();
+}
+%>
+</table>
+
+<br> <a href="http://localhost:8081/PROJ">홈으로</a>
+<p /> <a href= "insertBoard1.jsp"> 새 글쓰기</a>
+<p /> <a href= "deleteBoard1.jsp"> 글 삭제</a>
+
+
+</body>
+</html>

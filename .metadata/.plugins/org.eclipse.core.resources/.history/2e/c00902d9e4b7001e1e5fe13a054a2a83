@@ -1,0 +1,193 @@
+/*폰트 적용*/
+@font-face 
+{
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html > body 
+{
+  font-family:"GmarketSansMedium";
+}
+
+/*라이브러리*/
+.con 
+{
+  max-width:1456px;
+}
+
+/*커스텀*/
+.sign-up-box
+{
+  height:1329px;
+}
+
+/*메뉴 1*/
+.menu-1
+{
+  width:480px;
+  padding:48px 72px;
+  margin:64px 0;
+}
+
+/*로고*/
+.logo
+{
+  font-weight:bold;
+  text-shadow:0.5px 0,-0.5px 0;
+  font-size:12px;
+}
+
+/*메뉴 1 글자*/
+.menu-1 h1
+{
+  font-size:20px;
+  font-weight:bold;
+  margin-top:44px;
+}
+
+.menu-1 p
+{
+  font-size:14px;
+  margin-top:32px;
+  margin-bottom:8px;
+}
+
+.input-box span
+{
+  font-size:14px;
+}
+
+hr
+{
+  border:1px solid rgb(229,229,229);
+}
+
+/* 하단 버튼*/
+.ok-button
+{
+  background-color:black;
+  margin-top:64px;
+  padding:12px 0;
+  border-radius:8px;
+  color: aqua;
+}
+
+/*입력 박스*/
+input 
+{
+  outline:0;
+  border:1px solid #afafaf;
+}
+
+input:focus 
+{
+  border-color:#000;
+}
+
+input[type="name"] ~ div 
+{
+  display:none;
+  color:red;
+}
+
+input[type="email"] ~ div 
+{
+  display:none;
+  color:red;
+}
+
+input[type="phone-number"] ~ div 
+{
+  display:none;
+  color:red;
+}
+
+input[type="password"] ~ div 
+{
+  display:none;
+  color:red;
+}
+
+input.focused[type="name"]:placeholder-shown:not(:focus) ~ .empty 
+{
+  display:block;
+}
+
+input.focused[type="email"]:placeholder-shown:not(:focus) ~ .empty 
+{
+  display:block;
+}
+
+input.focused[type="phone-number"]:placeholder-shown:not(:focus) ~ .empty 
+{
+  display:block;
+}
+
+input.focused[type="password"]:placeholder-shown:not(:focus) ~ .empty 
+{
+  display:block;
+}
+
+/*인증 바구니*/
+.input-box__basket
+{
+  margin-bottom:8px;
+}
+
+.phone
+{
+  padding:12px 16px;
+}
+
+.input-box__basket span
+{
+  padding:0 12px 0 12px;
+  font-size:12px;
+}
+
+.input-box__basket-button-1
+{
+  margin-left:8px;
+  border:1px solid rgb(230, 120, 0);
+  border-radius:4px;
+  color:rgb(230, 120, 0);
+}
+
+.input-box__basket-button-2
+{
+  background-color:#e6780080;
+  color:white;
+  border-radius:4px;
+  margin-left:8px;
+}
+
+.input-box__basket-button-2 span
+{
+  padding:6px 12px;
+  white-space:nowrap;
+}
+
+/*체크박스*/
+.check-box__up
+{
+  margin-top:64px;
+}
+
+.check-box-list
+{  
+  margin-top:8px;
+}
+
+.check-box-list span, a
+{
+  font-size:14px;
+}
+
+.check-box-list a
+{
+  margin-left:4px;
+  color:#a3a3a3;
+}
